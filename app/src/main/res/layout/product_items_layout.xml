@@ -18,9 +18,10 @@ app:cardElevation="15dp">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:text="Product Name"
+        android:text="@string/product_name"
+
         android:textAlignment="center"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"/>
 
@@ -37,9 +38,9 @@ app:cardElevation="15dp">
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/product_Image1"
-        android:text="Product Price"
+        android:text="@string/product_price"
         android:textAlignment="center"
-        android:textSize="18dp"
+        android:textSize="18sp"
 
         android:textColor="@color/colorPrimary"/>
 
@@ -50,9 +51,9 @@ app:cardElevation="15dp">
         android:layout_below="@+id/product_price1"
         android:layout_marginTop="2dp"
         android:paddingBottom="5dp"
-        android:text="Product Description"
+        android:text="@string/product_description"
         android:textAlignment="center"
-        android:textSize="16dp"
+        android:textSize="16sp"
 
         android:textColor="@color/colorPrimary"/>
 </RelativeLayout>
