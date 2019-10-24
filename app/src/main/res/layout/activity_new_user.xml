@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context=".NewUserActivity">
+
+    <ImageView
+        android:id="@+id/image_View_Logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:cropToPadding="false"
+        android:src="@drawable/logo"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView_logo_name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/image_View_Logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:fontFamily="cursive"
+        android:text="OurGifts"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_Login_NU"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_OR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/buttons"
+        android:text="Login"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/textView_OR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/circle"
+        android:padding="10dp"
+        android:text="OR"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/btn_Login_NU"
+        android:layout_alignLeft="@+id/btn_Login_NU"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/input_text"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

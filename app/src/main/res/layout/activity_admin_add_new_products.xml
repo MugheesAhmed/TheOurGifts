@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context=".Admin.AdminAddNewProductsActivity">
+
+    <ImageView
+        android:id="@+id/select_product_image"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:cropToPadding="false"
+        android:src="@drawable/gallery_image" />
+
+    <EditText
+        android:id="@+id/product_Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:hint="Product Name..."
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/select_product_image"
+        android:background="@drawable/tv_bg" />
+    <EditText
+        android:id="@+id/product_Description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:hint="Product Description..."
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/product_Name"
+        android:background="@drawable/tv_bg" />
+    <EditText
+        android:id="@+id/product_Price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="45dp"
+        android:padding="10dp"
+        android:inputType="textMultiLine"
+        android:hint="Product Price..."
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/product_Description"
+        android:background="@drawable/tv_bg" />
+
+    <Button
+        android:id="@+id/button_AddProduct"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_Price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/buttons"
+        android:text="Add Product"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

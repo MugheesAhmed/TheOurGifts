@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView_BackbtnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@mipmap/ic_launcher_back" />
+
+
+    <TextView
+        android:id="@+id/textViewPN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_BackbtnLogin"
+        android:layout_alignLeft="@+id/EdtextPN"
+        android:layout_marginTop="77dp"
+        android:text="Mobile Number"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/EdtextPN"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewPN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/tv_bg"
+        android:gravity="center"
+        android:hint="Enter Your Mobile Number"
+        android:inputType="text|phone"
+        android:paddingRight="5dp"
+        android:textAllCaps="true"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textViewPSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdtextPN"
+        android:layout_alignStart="@+id/textViewPN"
+        android:layout_alignLeft="@+id/textViewPN"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:id="@+id/EdPSW_Login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewPSW"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/tv_bg"
+        android:gravity="center"
+        android:hint="Enter Your Password"
+        android:inputType="text|textPassword"
+        android:paddingRight="5dp"
+        android:textAllCaps="true"
+        android:textSize="15sp" />
+
+    <com.rey.material.widget.CheckBox
+
+        android:id="@+id/remember_me_chkb"
+        style="@style/Material.Drawable.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textFPSW"
+        android:layout_alignStart="@+id/EdPSW_Login"
+
+        android:layout_alignLeft="@+id/EdPSW_Login"
+        android:layout_alignBottom="@+id/textFPSW"
+        android:gravity="center_vertical"
+        android:text="Remember Me"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cbd_strokeColor="@color/colorPrimaryDark" />
+
+
+    <Button
+        android:id="@+id/button_LoginUser"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remember_me_chkb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttons"
+        android:text="Login"
+
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textFPSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EdPSW_Login"
+        android:layout_alignEnd="@+id/EdPSW_Login"
+        android:layout_alignRight="@+id/EdPSW_Login"
+        android:layout_marginTop="13dp"
+        android:text="@string/for_p"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_LoginUser"
+        android:layout_alignEnd="@+id/button_LoginUser"
+        android:layout_alignRight="@+id/button_LoginUser"
+        android:layout_marginTop="8dp"
+        android:text="I'm an Admin?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/not_admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_LoginUser"
+        android:layout_alignStart="@+id/button_LoginUser"
+        android:layout_marginTop="8dp"
+        android:text="I'm not an Admin?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/admin_panel_link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textDHA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="SignUp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
